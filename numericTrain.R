@@ -19,5 +19,4 @@ plot(train_numeric_factor1)
 train_numeric_factor2 <- factor(train_numeric$L2_S26_F3040)
 plot(train_numeric_factor2)
 
-subie <- train_numeric[sample(nrow(train_numeric),100),]
-
+newy <- apply(train_numeric,2,function(x) is.numeric(x))
